@@ -1,0 +1,111 @@
+body {
+	background-color: lightskyblue;
+}
+
+header {
+	background-color: teal;
+	margin: 0;
+	padding-left: 5%;
+	padding-top: 3px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+nav.secondary {
+	justify-content: space-between;
+}
+
+footer {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	bottom: 2px;
+}
+
+div {
+	display: flex;
+}
+
+h1 {
+	text-align: right;
+	color: darkgray;
+	font-size: 27px;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h3 {
+	border-bottom: solid black 1px;
+}
+
+table {
+	margin-right: 2%;
+	border: solid black 1px;
+	border-collapse: collapse;
+}
+
+table.main {
+	width: 96%;
+	margin-left: 2%;
+	text-align: left;
+}
+
+table.main tr td {
+	border-left: solid black 1px;
+}
+
+div.dest {
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+}
+
+td.lastline {
+	border-bottom: solid black 1px;
+}
+
+td.total {
+	background-color: #FF000040;
+	border-bottom: solid black 1px;
+}
+
+table.solde {
+	text-align: right;
+	border: none;
+}
+
+table.solde tr td {
+	padding-right: 5px;
+}
+
+input {
+	background-color: white;
+	width: 98.5%;
+}
+
+tr.title {
+	background-color: teal;
+	text-align: center;
+	color: white;
+	border-bottom: solid black 1px;
+}
+
+tr.sec, tr.sec td input {
+	background-color: lightgray;
+}
+
+em.right {
+	text-align: right;
+	font-style: normal;
+}

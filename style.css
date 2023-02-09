@@ -1,0 +1,157 @@
+body {
+	font-family: Verdana, Calibri, sans-serif;
+	background-color: #445;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+/*Haut de la page*/
+header {
+	width: 100%;
+	background-color: #424558;
+}
+
+/*Element central*/
+nav {
+
+}
+
+/*Bas de la page*/
+footer {
+
+}
+
+/*General*/
+h1 {
+	text-align: center;
+}
+
+/*Menu*/
+header input[type=checkbox] {
+	display: none;
+}
+
+.menu-mobile {
+	display: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+header a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+header > ul > li > a {
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+ul.menu::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul.menu li {
+	float: left;
+	position: relative;
+}
+
+ul.menu li:hover .sousmenu {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	padding: 0px;
+	z-index: 100000;
+}
+
+ul.menu li:hover a {
+	padding: 15px 30px 20px 30px;
+}
+
+.sousmenu {
+	display: none;
+}
+
+.sousmenu li {
+	border-bottom: 1px solid #CCC;
+}
+
+.sousmenu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.sousmenu li:hover a {
+	color: #EEE;
+	font-weight: bold;
+}
+
+.accueil:hover {
+	border-top: 5px solid #E44D26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.cv:hover {
+	border-top: 5px solid #0070BB;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.projets:hover {
+	border-top: 5px solid #F1DC4F;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.contact:hover {
+	border-top: 5px solid #BBB;
+	background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.accueil .sousmenu {
+	background-color: RBG(230, 100, 40);
+}
+.cv .sousmenu {
+	background-color: RGB(000, 160, 240);
+}
+.projets .sousmenu {
+	background-color: RGB(251, 216, 99);
+}
+
+header input[type=checkbox]:checked ~ ul {
+	display: block;
+}
+
+@media screen and (max-width : 680px) {
+	.menu-mobile {
+		display: block;
+		color: #FFF;
+		background-color: RGBa(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+	header ul {
+		display: none;
+	}
+	header ul li, header ul li a {
+		width: 100%;
+		text-align: center;
+	}
+	header ul li a, header ul li:hover a {
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .sousmenu {
+		display: block;
+		position: static;
+	}
+}

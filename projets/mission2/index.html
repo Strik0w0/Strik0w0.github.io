@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="dest">
+			<h2>Nom de la compagnie</h2>
+			Adresse postale<br><br>
+			Détails du contact
+		</div>
+		<div class="dest">
+			<h1>FACTURE</h1>
+			<em class="right">26/01/2023<br></em>
+			<em class="right" style="color: lightgray;">N° de facture</em>
+		</div>
+	</header>
+	<nav>
+		<div class="dest">
+			<h3>Destinataire</h3>
+			Nom<br>
+			Nom de la société<br>
+			Adresse postale<br>
+			Téléphone<br>
+			Email
+		</div>
+		<div class="dest">
+			<h3>Envoyez à</h3>
+			Nom<br>
+			Nom de la société<br>
+			Adresse postale<br>
+			Téléphone<br>
+			Email
+		</div>
+	</nav>
+	<table class="main">
+			<tr class="title">
+				<td>DESCRIPTION</td>
+				<td>QUANTITE</td>
+				<td>PRIX UNITAIRE</td>
+				<td>TOTAL</td>
+			</tr>
+			<tr style="background-color: white;">
+				<td><input type="text" value="desc1"></td>
+				<td><input type="text" value="0"></td>
+				<td><input type="text" value="0"></td>
+				<td>0</td>
+			</tr>
+			<tr class="sec">
+				<td><input type="text" value="desc2"></td>
+				<td><input type="text" value="0"></td>
+				<td><input type="text" value="0"></td>
+				<td>0</td>
+			</tr>
+			<tr style="background-color: white;">
+				<td><input type="text" value="desc3"></td>
+				<td><input type="text" value="0"></td>
+				<td><input type="text" value="0"></td>
+				<td>0</td>
+			</tr>
+			<tr class="sec">
+				<td><input type="text" value="desc4"></td>
+				<td><input type="text" value="0"></td>
+				<td><input type="text" value="0"></td>
+				<td>0</td>
+			</tr>
+	</table>
+	<nav class="secondary">
+		<div>
+			Remarques, notes et instructions de paiement
+		</div>
+		<table class="solde">
+			<tr>
+				<td>SOUS TOTAL</td>
+				<td>1464</td>
+			</tr>
+			<tr>
+				<td>REMISE</td>
+				<td>10.00</td>
+			</tr>
+			<tr>
+				<td>SOUS-TOTAL MOINS LES REMISES</td>
+				<td>1317.6</td>
+			</tr>
+			<tr>
+				<td>TAUX D'IMPOSITION</td>
+				<td>10.00%</td>
+			</tr>
+			<tr>
+				<td>TAXE TOTALE</td>
+				<td>146.4</td>
+			</tr>
+			<tr>
+				<td class="lastline">EXPEDITO. MANUTENTION</td>
+				<td class="lastline">5.00</td>
+			</tr>
+			<tr>
+				<td>SOLDE DU</td>
+				<td class="total">1469</td>
+			</tr>
+		</table>
+	</nav>
+	<footer>
+		<input type="button" value="Calculer">
+		<input type="button" value="Ajouter une ligne" onclick="ajouterLigne()">
+		<input type="button" value="Remplir automatiquement" onclick="remplir()">
+		<input type="button" value="Annuler">
+	</footer>
+</body>
+</html>
