@@ -1,200 +1,157 @@
-/************************
-Créé par Olivier Warchol
-À rendre pour le 27/01/23
-************************/
-
 body {
-	background-color: #3D3D49;
+	font-family: Verdana, Calibri, sans-serif;
+	background-color: #445;
 	color: white;
-	padding: 0;
 	margin: 0;
-	text-shadow: 2px 1.5px black;
+	padding: 0;
 }
 
 /*Haut de la page*/
 header {
-	height: auto;
-	margin: 5px;
-	border: solid #908500 1px;
-	border-radius: 15px;
+	width: 100%;
+	background-color: #424558;
 }
 
-/*Menu et affichage principal*/
+/*Element central*/
 nav {
-	display: flex;
-	flex-direction: row;
-}
-/*Menu*/
-div.menu {
-	margin-left: 0.3%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	border: solid #726900 3px;
-	border-radius: 10px;
-	background-color: #908500;
-	color: white;
-	position: fixed;
-	height: 81%;
-	width: 21%;
-}
 
-/*Affichage principal*/
-article {
-	position: fixed;
-	margin-left: 23%;
-	border: dashed #908500 2px;
-	border-radius: 10px;
-	height: 75%;
-	width: 76.45%;
-}
-
-div.text {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	height: 75%;
-	padding: 10px;
-	font-size: 20px;
-}
-
-iframe {
-	position: fixed;
-	margin-left: 23%;
-	border: dashed #908500 2px;
-	border-radius: 10px;
-	height: 75%;
-	width: 76.45%;
 }
 
 /*Bas de la page*/
 footer {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	height: 2rem;
-	right: 0;
-	bottom: 0;
-	left: 0;
+
 }
 
-footer p {
-	border-top: solid #908500 1px;
-	border-radius: 5px;
-	padding: 5px;
-}
-
-/*Autre*/
+/*General*/
 h1 {
 	text-align: center;
-	color: #F6E400;
-	font-weight: bold;
-	font-size: 32px;
 }
 
-h2 {
-	text-align: center;
-	font-size: 23px;
-	text-decoration: underline;
-	color: #F6E400;
-	font-weight: bold;
+/*Menu*/
+header input[type=checkbox] {
+	display: none;
 }
 
-h3 {
-	color: black;
-	text-align: center;
-	text-shadow: 2px 1.5px #675F00;
-	font-size: 20px;
+.menu-mobile {
+	display: none;
 }
 
-hr {
-	color: #908500;
-}
-
-p {
-	text-align: justify;
-	font-size: 17px;
-}
-
-em {
-	text-decoration: none;
-	font-weight: bold;
-	font-style: normal;
-}
-
-strong {
-	text-decoration: underline;
-	font-weight: normal;
-}
-
-/*Liens*/
-a {
-	color: #C0B200;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #C0B200;
-	font-style: italic;
-}
-
-a:visited {
-	color: #C0B200;
-}
-
-li a {
-	color: white;
-	text-decoration: none;
-}
-
-li a:visited {
-	color: white;
-}
-
-li a:hover {
-	font-style: italic;
-	color: white;
-}
-
-/*Menu déroulant*/
-ul.menu {
-	list-style-type: none;
+ul {
+	margin: 0;
 	padding: 0;
-	width: 90%;
+}
+
+li {
+	list-style-type: none;
+}
+
+header a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+header > ul > li > a {
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+ul.menu::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 ul.menu li {
-	padding: 5px;
-	background-color: #929292;
-	border-radius: 5px;
-	width: 40%;
-	height: 15%;
-	margin: auto;
-	margin-top: 3px;
+	float: left;
+	position: relative;
 }
 
-ul.sousmenu {
-	display: none;
-	list-style-type: none;
-	padding: 0;
-	width: 85%;
-}
-
-ul.sousmenu li {
-	background-color: #484848;
-}
-
-li:hover ul.sousmenu {
+ul.menu li:hover .sousmenu {
 	display: inline-block;
 	position: absolute;
-	left: 39%;
+	top: 100%;
+	left: 0%;
 	padding: 0px;
 	z-index: 100000;
 }
 
-input[type=checkbox]{
+ul.menu li:hover a {
+	padding: 15px 30px 20px 30px;
+}
+
+.sousmenu {
 	display: none;
+}
+
+.sousmenu li {
+	border-bottom: 1px solid #CCC;
+}
+
+.sousmenu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.sousmenu li:hover a {
+	color: #EEE;
+	font-weight: bold;
+}
+
+.accueil:hover {
+	border-top: 5px solid #E44D26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.cv:hover {
+	border-top: 5px solid #0070BB;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.projets:hover {
+	border-top: 5px solid #F1DC4F;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.contact:hover {
+	border-top: 5px solid #BBB;
+	background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.accueil .sousmenu {
+	background-color: RBG(230, 100, 40);
+}
+.cv .sousmenu {
+	background-color: RGB(000, 160, 240);
+}
+.projets .sousmenu {
+	background-color: RGB(251, 216, 99);
+}
+
+header input[type=checkbox]:checked ~ ul {
+	display: block;
+}
+
+@media screen and (max-width : 680px) {
+	.menu-mobile {
+		display: block;
+		color: #FFF;
+		background-color: RGBa(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+	header ul {
+		display: none;
+	}
+	header ul li, header ul li a {
+		width: 100%;
+		text-align: center;
+	}
+	header ul li a, header ul li:hover a {
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .sousmenu {
+		display: block;
+		position: static;
+	}
 }
