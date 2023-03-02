@@ -19,7 +19,8 @@ nav {
 
 /*Bas de la page*/
 footer {
-
+	bottom: 3;
+	position: absolute;
 }
 
 /*General*/
