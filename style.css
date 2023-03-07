@@ -105,12 +105,12 @@ ul.menu li:hover a {
 	background-color: RGBa(228, 77, 38, 0.15);
 }
 
-.cv:hover {
+.html:hover {
 	border-top: 5px solid #0070BB;
 	background-color: RGBa(000, 112, 192, 0.15);
 }
 
-.projets:hover {
+.php:hover {
 	border-top: 5px solid #F1DC4F;
 	background-color: RGBa(241, 211, 79, 0.15);
 }
@@ -123,10 +123,10 @@ ul.menu li:hover a {
 .accueil .sousmenu {
 	background-color: RBG(230, 100, 40);
 }
-.cv .sousmenu {
+.html .sousmenu {
 	background-color: RGB(000, 160, 240);
 }
-.projets .sousmenu {
+.php .sousmenu {
 	background-color: RGB(251, 216, 99);
 }
 
