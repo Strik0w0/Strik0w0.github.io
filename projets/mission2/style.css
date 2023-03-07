@@ -1,3 +1,8 @@
+/**************************************
+  style.css écrit par Olivier Warchol
+dernière modification: 14/02/23 à 17h00
+**************************************/
+
 body {
 	background-color: lightskyblue;
 }
@@ -33,6 +38,10 @@ div {
 	display: flex;
 }
 
+input[type=button] {
+	margin-left: 5px;
+}
+
 h1 {
 	text-align: right;
 	color: darkgray;
@@ -41,8 +50,8 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
-	font-weight: normal;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 h3 {
@@ -61,7 +70,7 @@ table.main {
 	text-align: left;
 }
 
-table.main tr td {
+table.main td {
 	border-left: solid black 1px;
 }
 
@@ -75,8 +84,7 @@ td.lastline {
 	border-bottom: solid black 1px;
 }
 
-td.total {
-	background-color: #FF000040;
+td.soldetotal {
 	border-bottom: solid black 1px;
 }
 
@@ -85,27 +93,44 @@ table.solde {
 	border: none;
 }
 
-table.solde tr td {
+table.solde td {
 	padding-right: 5px;
 }
 
 input {
 	background-color: white;
 	width: 98.5%;
+	outline: none;
+	border: none;
+	background-color: none;
 }
 
-tr.title {
+table.solde input {
+	background-color: lightskyblue;
+	text-align: right;
+}
+
+table.main tr {
+	background-color: white;
+}
+
+table.main tr:nth-child(even), table.main tr:nth-child(even) input {
+	background-color: lightgray;
+}
+
+em {
+	border-bottom: solid black 1px;
+}
+
+header div p {
+	text-align: center;
+	margin-left: 82.5%;
+	font-style: normal;
+}
+
+table.main tr.title {
 	background-color: teal;
 	text-align: center;
 	color: white;
 	border-bottom: solid black 1px;
-}
-
-tr.sec, tr.sec td input {
-	background-color: lightgray;
-}
-
-em.right {
-	text-align: right;
-	font-style: normal;
 }
