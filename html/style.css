@@ -1,6 +1,6 @@
 body {
 	font-family: Verdana, Calibri, sans-serif;
-	background-color: #524e54;
+	background-color: #4f5154;
 	color: white;
 	margin: 0;
 	padding: 0;
@@ -9,7 +9,7 @@ body {
 /*Haut de la page*/
 header {
 	width: 100%;
-	background-color: #544b57;
+	background-color: #4b5057;
 	display: flex;
 	justify-content: space-around;
 }
@@ -26,13 +26,18 @@ footer {
 	bottom: 5px;
 	width: 100%;
 	text-align: center;
-	background-color: #544b57;
+	background-color: #4b5057;
 }
 
 /*General*/
 h1 {
 	font-size: 24px;
 	text-decoration: underline;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
 }
 
 /*Menu*/
@@ -85,11 +90,6 @@ ul.menu li:hover .sousmenu {
 
 ul.menu li:hover a {
 	padding: 15px 30px 20px 30px;
-	text-shadow: 2px 2px black;
-}
-
-ul.menu li:hover .sousmenu li a {
-	text-shadow: none;
 }
 
 .sousmenu {
@@ -107,37 +107,36 @@ ul.menu li:hover .sousmenu li a {
 	width: 270px;
 }
 .sousmenu li:hover a {
-	color: #FFF;
+	color: #EEE;
 	font-weight: bold;
-	text-shadow: 2px 2px black;
 }
 
-.accueil:hover { 					/*Hue: 290*/
+.accueil:hover {
 	border-top: 5px solid #9c0fb8;
 	background-color: #9c0fb825;
 }
 
-.sql:hover { 						/*Hue: 14*/
+.sql:hover {
 	border-top: 5px solid #ec420f;
 	background-color: #ec420f25;
 }
 
-.html:hover { 						/*Hue: 215*/
+.html:hover {
 	border-top: 5px solid #106be8;
 	background-color: #106be825;
 }
 
-.php:hover { 						/*Hue: 323*/
+.php:hover {
 	border-top: 5px solid #ff40b7;
 	background-color: #ff40b725;
 }
 
-.javascript:hover {					/*Hue: 57*/
+.javascript:hover {
 	border-top: 5px solid #eadf0d;
 	background-color: #eadf0d25;
 }
 
-.contact:hover {					/*Hue: 0*/
+.contact:hover {
 	border-top: 5px solid #ec0909;
 	background-color: #ec090925;
 }
