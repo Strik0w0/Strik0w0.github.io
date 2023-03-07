@@ -1,0 +1,128 @@
+<!-------------------------------------
+ index.html écrit par Olivier Warchol
+dernière modification: 14/02/23 à 17h00
+-------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mission 2: facture</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- Bannière -->
+	<header>
+		<div class="dest">
+			<h2>Nom de la compagnie</h2>
+			Adresse postale<br><br>
+			Détails du contact
+		</div>
+		<div class="dest" style="margin-right: 2.5%;">
+			<h1>FACTURE</h1>
+			<p>
+				<em>26/01/2023</em><br><br>
+				<em style="color: lightgray;">N° de facture</em><br><br>
+			</p>
+
+		</div>
+	</header>
+	<nav>
+		<div class="dest">
+			<h3>Destinataire</h3>
+			Nom<br>
+			Nom de la société<br>
+			Adresse postale<br>
+			Téléphone<br>
+			Email
+		</div>
+		<div class="dest">
+			<h3>Envoyez à</h3>
+			Nom<br>
+			Nom de la société<br>
+			Adresse postale<br>
+			Téléphone<br>
+			Email
+		</div>
+	</nav>
+	<!-- Tableau central -->
+	<table class="main" id="table_inv">
+			<tr class="title">
+				<td>DESCRIPTION</td>
+				<td>QUANTITE</td>
+				<td>PRIX UNITAIRE</td>
+				<td>TOTAL</td>
+			</tr>
+			<tr id="modeleLigne">
+				<td><input type="text" name="desc" class="input desc" value="desc1"></td>
+				<td><input type="text" name="qte" class="input qte" value="0"></td>
+				<td><input type="text" name="prix" class="input prix" value="0"></td>
+				<td><input name="total" class="totalLigne" readonly value="0"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="desc" class="input desc" value="desc2"></td>
+				<td><input type="text" name="qte" class="input qte" value="0"></td>
+				<td><input type="text" name="prix" class="input prix" value="0"></td>
+				<td><input name="total" class="totalLigne" readonly value="0"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="desc" class="input desc" value="desc3"></td>
+				<td><input type="text" name="qte" class="input qte" value="0"></td>
+				<td><input type="text" name="prix" class="input prix" value="0"></td>
+				<td><input name="total" class="totalLigne" readonly value="0"></td>
+			</tr>
+			<tr id="lastLigne">
+				<td><input type="text" name="desc" class="input desc" value="desc4"></td>
+				<td><input type="text" name="qte" class="input qte" value="0"></td>
+				<td><input type="text" name="prix" class="input prix" value="0"></td>
+				<td><input name="total" class="totalLigne" readonly value="0"></td>
+			</tr>
+	</table>
+	<nav class="secondary">
+		<div style="padding-left: 2%;">
+			Remarques, notes et instructions de paiement
+		</div>
+		<!-- Tableau taxes -->
+		<table class="solde">
+			<tr>
+				<td>SOUS TOTAL</td>
+				<td><input name="stotal" class="sousTotal" readonly value="0"></td>
+			</tr>
+			<tr>
+				<td>REMISE</td>
+				<td><input name="remise" class="remise" value="0"></td>
+			</tr>
+			<tr>
+				<td>SOUS-TOTAL MOINS LES REMISES</td>
+				<td><input name="stotalrem" class="sousTotalAvecRemise" readonly value="0"></td>
+			</tr>
+			<tr>
+				<td>TAUX D'IMPOSITION (%)</td>
+				<td><input name="impot" class="imposition" value="10"></td>
+			</tr>
+			<tr>
+				<td>TAXE TOTALE</td>
+				<td><input name="totaltaxe" class="totalTaxe" readonly value="0"></td>
+			</tr>
+			<tr>
+				<td class="lastline">EXPEDITO. MANUTENTION</td>
+				<td class="lastline"><input name="livr" class="prixLivraison" value="0"></td>
+			</tr>
+			<tr>
+				<td>SOLDE DU</td>
+				<td class="soldetotal"><input name="solde" class="soldeDu" readonly value="0" style="background-color: #F004;"></td>
+			</tr>
+		</table>
+	</nav>
+	<!-- Boutons -->
+	<footer>
+		<input type="button" value="Calculer" onclick="calculer()">
+		<input type="button" value="Ajouter une ligne" onclick="ajouterLigne()">
+		<input type="button" value="Remplir automatiquement" onclick="remplir()">
+		<input type="button" value="Annuler" onclick="annuler()">
+		<input type="button" value="Retour" onclick="window.location.href='https://strik0w0.github.io';">
+	</footer>
+</body>
+</html>
