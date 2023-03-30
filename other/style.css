@@ -1,29 +1,73 @@
 body {
 	font-family: Verdana, Calibri, sans-serif;
-	background-color: #54504d;
+	background-color: #544f4f;
 	color: white;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 /*Haut de la page*/
 header {
 	width: 100%;
-	background-color: #574e4a;
+	background-color: #574d4d;
 	display: flex;
 	justify-content: space-around;
+	text-align: left;
 }
 
 /*Element central*/
 nav {
 	margin: 15px;
 	margin-left: 30px;
+	text-align: left;
 }
 
 iframe {
 	width: 99%;
-	height: 89.5vh;
+	height: 85vh;
 
+}
+
+div.liens {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+div.lieng {
+	display: flex;
+	justify-content: space-between;
+	width: 51.9%;
+}
+
+div.liend {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 49.1%;
+}
+
+div.lieng a, div.liens a, div.liend a {
+	color: skyblue;
+	margin-top: 10px;
+}
+
+div.cnil {
+	text-align: center;
+}
+
+div.cnil ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+div.cnil ul li {
+	background-color: whitesmoke;
+	border: solid black 3px;
+	border-radius: 15px;
+	margin: 5px;
+	padding: 15px 30px;
 }
 
 a {
@@ -42,7 +86,6 @@ a:hover {
 
 .menu li:hover a {
 	font-style: normal;
-	text-decoration: none;
 }
 
 /*Bas de la page*/
@@ -50,8 +93,9 @@ footer {
 	position: absolute;
 	bottom: 5px;
 	width: 100%;
+	height: 2.5%;
 	text-align: center;
-	background-color: #574e4a;
+	background-color: #574d4d;
 }
 
 /*General*/
@@ -62,6 +106,12 @@ h1 {
 
 h2 {
 	font-size: 20px;
+	font-weight: normal;
+}
+
+h3 {
+	text-decoration: underline;
+	font-size: 18px;
 	font-weight: normal;
 }
 
@@ -86,7 +136,10 @@ li {
 header a {
 	display: inline-block;
 	text-decoration: none;
-	font-style: normal;
+}
+
+header a:hover {
+	text-decoration: none;
 }
 
 header > ul > li > a {
@@ -140,6 +193,7 @@ ul.menu li:hover .sousmenu li a {
 .sousmenu li:hover a {
 	color: #FFF;
 	font-weight: bold;
+	font-style: normal;
 	text-shadow: 2px 2px black;
 }
 
@@ -152,11 +206,9 @@ ul.menu li:hover .sousmenu li a {
 	background-color: #9c0fb825;
 }
 
-.sql {
-	background-color: #ec420f25;
-}
 .sql:hover { 						/*Hue: 14*/
 	border-top: 5px solid #ec420f;
+	background-color: #ec420f25;
 }
 
 .html:hover { 						/*Hue: 215*/
@@ -174,9 +226,11 @@ ul.menu li:hover .sousmenu li a {
 	background-color: #eadf0d25;
 }
 
+.other {
+	background-color: #ec090925;
+}
 .other:hover {					/*Hue: 0*/
 	border-top: 5px solid #ec0909;
-	background-color: #ec090925;
 }
 
 .sql .sousmenu {

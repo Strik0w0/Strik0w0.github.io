@@ -20,6 +20,25 @@ nav {
 	margin-left: 30px;
 }
 
+a {
+	color: skyblue;
+}
+
+ul.liens li a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.menu li:hover a {
+	font-style: normal;
+	text-decoration: none;
+}
+
 /*Bas de la page*/
 footer {
 	position: absolute;
@@ -111,6 +130,10 @@ ul.menu li:hover a {
 	font-weight: bold;
 }
 
+.javascript .sousmenu li:hover a {
+	color: #000;
+}
+
 .accueil:hover {
 	border-top: 5px solid #9c0fb8;
 	background-color: #9c0fb825;
@@ -121,9 +144,11 @@ ul.menu li:hover a {
 	background-color: #ec420f25;
 }
 
+.html {
+	background-color: #106be825;
+}
 .html:hover {
 	border-top: 5px solid #106be8;
-	background-color: #106be825;
 }
 
 .php:hover {
@@ -136,7 +161,7 @@ ul.menu li:hover a {
 	background-color: #eadf0d25;
 }
 
-.contact:hover {
+.other:hover {
 	border-top: 5px solid #ec0909;
 	background-color: #ec090925;
 }
@@ -152,6 +177,9 @@ ul.menu li:hover a {
 }
 .javascript .sousmenu {
 	background-color: #eadf0d;
+}
+.other .sousmenu {
+	background-color: #ec0909;
 }
 
 header input[type=checkbox]:checked ~ ul {
